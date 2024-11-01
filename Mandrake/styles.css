@@ -58,7 +58,7 @@ main {
 }
 
 .produto img {
-    max-width: 30px; /* Ajusta imagem para um tamanho menor */
+    max-width: 60px; /* Ajusta imagem para um tamanho menor */
     height: auto;
 }
 
@@ -93,18 +93,6 @@ footer {
 }
 
 /* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
