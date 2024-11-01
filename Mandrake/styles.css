@@ -1,0 +1,273 @@
+/* Base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font-size para acessibilidade */
+}
+
+/* Header */
+header {
+    background: #3364eb;
+    color: rgb(254, 254, 255);
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+/* Layout */
+main {
+    padding: 20px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adiciona espaço entre os produtos */
+    justify-content: space-between;
+}
+
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 calc(33% - 20px); /* 3 produtos por linha */
+}
+
+.produto img {
+    max-width: 30%; /* Ajusta imagem para responsividade */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    width: 100%;
+    position: relative;
+}
+
+/* Contato e redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:focus,
+.close:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Lista do carrinho */
+.lista-carrinho {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.item-carrinho img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* Seção "Nossa História" */
+#nossaHistoria {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Botão finalizar compra */
+#finalizarCompra {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#finalizarCompra:hover {
+    background-color: #45a049;
+}
+
+/* Campos de endereço */
+#enderecoEntrega input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#enderecoEntrega h4,
+#infoRetirada h4 {
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+
+#infoRetirada p {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+/* Tabs */
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .produto {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .produto {
+        flex: 1 1 100%;
+    }
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    float: left;
+}
+
+/* Ícone adicional */
+.coin-icon {
+    width: 30px;
+    height: auto;
+    margin: 10px;
+    float: left;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    border: none; /* Sem borda */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibir em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor um pouco mais escura ao passar o mouse */
+}
+
+.mensagem {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.mensagem.show {
+    opacity: 1;
+}
