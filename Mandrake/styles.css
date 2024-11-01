@@ -54,11 +54,11 @@ main {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    flex: 1 1 calc(33% - 20px); /* 3 produtos por linha */
+    flex: 1 1 calc(20% - 20px); /* 3 produtos por linha */
 }
 
 .produto img {
-    max-width: 30%; /* Ajusta imagem para responsividade */
+    max-width: 20%; /* Ajusta imagem para responsividade */
     height: auto;
 }
 
