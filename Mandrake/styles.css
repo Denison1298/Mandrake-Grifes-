@@ -58,7 +58,7 @@ main {
 }
 
 .produto img {
-    max-width: 80px; /* Ajusta imagem para um tamanho menor */
+    max-width: 30px; /* Ajusta imagem para um tamanho menor */
     height: auto;
 }
 
