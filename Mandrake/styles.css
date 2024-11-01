@@ -54,11 +54,11 @@ main {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    flex: 1 1 calc(20% - 20px); /* 3 produtos por linha */
+    flex: 1 1 calc(25% - 20px); /* 4 produtos por linha */
 }
 
 .produto img {
-    max-width: 10%; /* Ajusta imagem para responsividade */
+    max-width: 80px; /* Ajusta imagem para um tamanho menor */
     height: auto;
 }
 
@@ -209,13 +209,13 @@ footer {
 /* Responsividade */
 @media (max-width: 900px) {
     .produto {
-        flex: 1 1 calc(50% - 10px);
+        flex: 1 1 calc(33.33% - 10px); /* 3 produtos por linha em telas médias */
     }
 }
 
 @media (max-width: 600px) {
     .produto {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* 1 produto por linha em telas pequenas */
     }
 }
 
